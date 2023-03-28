@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import "./Header.css";
 import {
   faFacebook,
   faGithub,
@@ -64,10 +65,24 @@ const Header = () => {
           justifyContent="space-between"
           alignItems="center"
         >
-          <nav>
-            {/* Add social media links based on the `socials` data */}
-          </nav>
+          <nav className="Socials">
+          <a href="tshepisophetoane@yahoo.com" target="_blank" className="Email">
           <FontAwesomeIcon icon={faEnvelope} size="2x"/>
+          </a>
+          <a href="https://github.com/Gandalf-hash" target="_blank" className="Github">
+          <FontAwesomeIcon icon={faGithub} size="2x"/>
+          </a>
+          <a href="https://www.linkedin.com/in/tshepiso-johannes-a19353204" target="_blank" className="LinkedIn">
+          <FontAwesomeIcon icon={faLinkedin} size="2x"/>
+          </a>
+          <a href="https://www.facebook.com/Tshepiso.phiri99/" target="_blank" className="FaceBook">
+          <FontAwesomeIcon icon={faFacebook} size="2x"/>
+          </a>
+          <a href="" target="_blank" className="StackOverFlow">
+          <FontAwesomeIcon icon={faStackOverflow} size="2x"/>
+          </a>
+          </nav >
+          
           <nav>
             <HStack spacing={8}>
               {/* Add links to Projects and Contact me section */}
